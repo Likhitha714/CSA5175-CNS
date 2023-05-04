@@ -1,6 +1,6 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-key = "secretkey"
-plaintext = "thequickbrownfoxjumpsoverthelazydog"
+key = str(input("enter a string"))
+plaintext = str(input("enter a string"))
 ciphertext = ""
 for i in range(len(plaintext)):
     index = alphabet.index(plaintext[i])
