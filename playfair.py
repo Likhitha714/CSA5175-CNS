@@ -52,7 +52,7 @@ def decrypt(ciphertext, key):
         plaintext += matrix[a_row * 5 + a_col] + matrix[b_row * 5 + b_col]
     return plaintext
 
-plaintext = "HELLO WORLD"
-key = "SECRET"
+plaintext =str(input("enter the string"))
+key =str(input("enter the string"))
 ciphertext = encrypt(plaintext, key)
 print(ciphertext)  
