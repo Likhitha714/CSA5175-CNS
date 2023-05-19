@@ -1,0 +1,12 @@
+plaintext = str(input("enter the message"))
+key = int(input("enter the key"))
+numbers = [ord(c) - ord('a') for c in plaintext]
+ciphertext = ''
+for i, num in enumerate(numbers):
+    key_num = key[i % len(key)]
+    encrypted_num = (num + key_num) % 26
+    ciphertext += chr(encrypted_num + ord('a'))
+
+print('Plaintext:', plaintext)
+print('Key:', key)
+print('Ciphertext:', ciphertext)
